@@ -1,0 +1,62 @@
+<div class="page-container">
+    <a routerLink=".." class="d-flex align-items-center cursor-pointer">
+        <span class="ki ki-arrow-backward text-accent-violet font-weight-bold"></span>
+        <p class="ml-2 text-accent-violet ">Back to Users</p>
+    </a>
+    <div class="d-flex flex-column employee-profile-container mt-2  border-radius-6" *ngIf="user">
+        <div class="card w-100 clear-margin border-bottom d-flex">
+            <div class="card-body d-flex mt-1">
+                <div class="profile profile-32">
+                    <div class="profile-picture-container">
+                        <div class="">
+                            <img width="60px" height="60px" class="rounded-pill" src="{{user.profileImageUrl}}" alt="user-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="employee-details ml-3 d-flex flex-column">
+                    <h5 class="font-weight-semi-bold text-primary">{{ user.name }}</h5>
+                    <span class="text-secondary">{{ user.designation}}</span>
+                    <span class="text-secondary">{{user.department}}, {{user.location}}</span>
+                    <div class="d-flex mt-2">
+                        <div class="d-flex align-items-center" tooltip="Total Liked Answer of {{user.name}}">
+                            <i class="ki ki-thumb-up-fill ki-green"></i> <span class="text-primary">{{ user.likesCount}}</span>
+                        </div>
+                        <div class="d-flex align-items-center" tooltip="Total Disliked Answer of {{user.name}}">
+                            <i class="ki ki-thumb-down-fill ki-red ml-3"></i> <span class="text-primary">{{ user.dislikesCount}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex ml-90 align-items-center">
+                    <div class="d-flex flex-column align-items-center p-24 bg-secondary">
+                        <h5 class="text-primary">{{user.questionsAskedCount}}</h5>
+                        <p class="text-x-small text-secondary">
+                            Question Asked
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center p-24 ml-10 bg-secondary">
+                        <h5 class="text-primary">{{user.questionsAnsweredCount}}</h5>
+                        <p class="text-x-small text-secondary">
+                            Question Answered
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center p-24 ml-10 bg-secondary">
+                        <h5 class="text-primary">{{user.questionsSolvedCount}}</h5>
+                        <p class="text-x-small text-secondary">
+                            Question Solved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="nav sub-topnav sub-topnav-align w-100 pl-16">
+                <li routerLinkActive="active" class=""><a routerLink="questions">All Questions</a></li>
+                <li routerLinkActive="active" class=""><a routerLink="answers">Answered</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-20">
+        <!-- For Questions -->
+        <router-outlet></router-outlet>
+    </div>
+</div>

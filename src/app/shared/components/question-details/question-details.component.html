@@ -1,0 +1,53 @@
+<div class="card w-100 clear-margin border-0">
+    <div class="card-body border-bottom bg-warning-light" *ngIf="question">
+        <div>
+            <div class="d-flex align-items-center">
+                <div class="employee-profile-header">
+                    <div class="profile profile-32" (click)="redirectToProfile($event,question.askedBy)">
+                        <div class="profile-picture-container cursor-pointer">
+                            <div>
+                                <img width="80px" height="80px" class="profile-picture"
+                                    src="{{question.askedUserProfileImageUrl}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center ml-1">
+                    <div class="font-weight-bold cursor-pointer" (click)="redirectToProfile($event,question.askedBy)">
+                        <h6>{{question.askedUserName | titlecase}}</h6>
+                    </div>
+
+                    <div class="text-secondary text-small ml-20">
+                        <span>{{question.askedOn | timeAgo}}</span>
+                    </div>
+                </div>
+                <div class="ml-auto d-flex align-items-center">
+                    <span class="ki ki-error-filled ki-red"></span>
+                    <span class="text-secondary"> Report this</span>
+                </div>
+            </div>
+            <div class="w-100">
+                <h5>{{question.title}}</h5>
+                <p class="text-secondary text-small font-weight-semi-bold mt-1"
+                    [innerHTML]="sanatize(question.description)">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<div class="mx-2 mt-10 rounded bg-white" *ngIf="hidetextArea">
+    <div class="w-600 position-relative ">
+        <span class="ki ki-enlarge text-secondary cursor-pointer position-absolute right-10 mr- mt-2"
+            (click)="expandTextArea()"></span>
+    </div>
+    <quill-editor class="content-editor h-200 w-100 " [modules]="{toolbar:true}" [(ngModel)]="sharedData"
+        (ngModelChange)="updateData($event)" placeholder="Enter your text here..."></quill-editor>
+    <div class="position-relative ">
+        <button class="ki ki-send ml-auto border-0 bg-white position-absolute bottom-100 right-10 mb-10"
+            (click)="submitAnswer()" [disabled]="sharedData ===''"></button>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<nav class="navbar page-header navbar-light fixed-top">
+    <div class="d-flex justify-content-between w-100 bg-accent-violet">
+        <div class="d-flex align-items-center">
+            <div class="navbar-brand cursor-pointer" tabindex="0">
+                <div class="position-relative">
+                    <img alt="Keka" height="25" width="69" class="ml-2 mt-1" src='{{ imgName | linkTransform }}'>
+                </div>
+            </div>
+            <a class="text-white letter-spacing-5 mt-1 clear-padding-x" (click)="homePage()">Corporate Q&A</a>
+        </div>
+        <div id="top-nav" class="page-header-left d-flex align-items-center">
+            <div class="dropdown">
+                <div class="dropdown">
+                    <a dropdowntoggle="" id="userProfile" aria-haspopup="true" aria-expanded="true" class="user-options">
+                        <p class="mx-10"> {{ currentDate | date:'dd MMM yyyy' }} </p>
+                        <span class="ki ki-sun text-white xs"></span>
+                        <span class="profile-name ml-10" *ngIf="loginUserName">Welcome, </span>
+                        <div *ngIf="loginUserName" dropdown>
+                            <a class="icon-click d-flex align-items-center" dropdownToggle id="dropdown-menu" aria-haspopup="true" aria-expanded="false">
+                                <span class="profile-name ml-1 text-white"> {{ loginUserName | titlecase}}</span>
+                                <span class="ki ki-chevron-down"></span>
+                                <div class="employee-profile-header">
+                                    <div class="profile profile-32">
+                                        <div class="profile-picture-container">
+                                            <div><img class="profile-picture" src="{{ loginUserProfileImage }}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-menu" *dropdownMenu>
+                                <li (click)="logout()">
+                                    <a class="dropdown-item">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

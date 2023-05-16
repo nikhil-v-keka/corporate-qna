@@ -1,0 +1,33 @@
+<div>
+    <div class="modal-header">
+        <h5 class="modal-title h4">Add Question</h5>
+        <span class="icon ki-close" (click)="onClose()"></span>
+    </div>
+    <form action="" [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+    <div class="modal-body ">
+        <div class="form-group w-75">
+            <label class="h5">Question</label>
+            <input type="text" class="form-control text-normal text-primary" placeholder="Enter Your Question" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label class="h5">Description</label>
+            <quill-editor class="content-editor h-200 w-100 bg-white" [modules]="{toolbar:true}" formControlName="description" placeholder="Enter your text here..."></quill-editor>
+        </div>
+        <div class="form-group w-33">
+            <label class="font-weight-semi-bold ml-1">Category</label>
+            <div class="ng-select border border-radius-4 ">
+                <ng-select  bindLabel="name"  formControlName="categoryId">
+                    <ng-option value="all">All</ng-option>
+                    <ng-option [value]="category.id" *ngFor="let category of categoryFilters" >
+                        {{category.name}}
+                    </ng-option>
+                </ng-select>  
+            </div>
+        </div> 
+    </div>
+    <div class="modal-footer p-20">
+        <button type="button" class="btn btn-secondary" (click)="onClose()">Cancel</button>
+        <button type="submit" class="btn bg-accent-violet text-white" [disabled]="questionForm.invalid">Add</button>
+    </div>
+</form>
+</div>

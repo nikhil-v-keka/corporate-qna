@@ -1,0 +1,60 @@
+<div class="m-10 position-relative">
+    <span class="font-weight-bold text-large">Answers({{answers.length}})</span>
+</div>
+<div class="card clear-margin border border-right-0 border-bottom-0 border-left-0">
+    <div class="card-body bg-black-5" *ngIf="answers.length!=0">
+        <div class="mb-20 " *ngFor="let answer of answers, let i=index">
+            <div class="d-flex">
+                <div class="w-100">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="employee-profile-header">
+                            <div class="profile profile-32 cursor-pointer" (click)="redirectToUser($event,answer.answeredBy)">
+                                <div class="profile-picture-container">
+                                    <div>
+                                        <img width="20px" height="20px" class="profile-picture"
+                                            src="{{answer.answeredUserProfileImageUrl}}" alt="profile-pic">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="font-weight-bold cursor-pointer" (click)="redirectToUser($event, answer.answeredBy)">
+                            <h6>{{answer.answeredUserName | titlecase}}</h6>
+                        </div>
+                        <div class="text-secondary text-small ml-20">
+                            <span>{{answer.answeredOn | timeAgo}} </span>
+                        </div>
+                        <div class="d-flex align-items-center ml-auto text-xx-small">
+                            <div class="d-flex align-items-center">
+                                <i class="ki ki-green cursor-pointer"
+                                    [ngClass]="{'ki-thumb-up ': answer.reaction === 0 || answer.reaction === 2, 'ki-thumb-up-fill': answer.reaction=== 1}"
+                                    (click)="onLike(i)"></i>
+                                <span class="mt-1">{{answer.likesCount}}</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="ki ki-red mt-1 ml-3 cursor-pointer"
+                                    [ngClass]="{'ki-thumb-down ': answer.reaction === 0 || answer.reaction === 1, 'ki-thumb-down-fill': answer.reaction=== 2}"
+                                    (click)="onDisLike(i)"></i>
+                                <span class="mt-1">{{answer.disLikesCount}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-32 w-100 mt-2 pr-8">
+                        <p class="text-secondary text-normal font-weight-semi-bold clear-margin" [innerHTML]="sanatize(answer.content)"></p>
+                    </div>
+                    <div class="pl-32 w-100 pr-4 mt-20 mb-10">
+                        <div *ngIf="isMarked"> 
+                            <input type="checkbox"
+                            [id]="answer.id" 
+                            name="bestSolution" 
+                            class="checkbox-sm" 
+                            [checked]="answer.isBestSolution" 
+                            (change)="updateCheckedOptions(answer,$event)"  
+                            #checked>
+                           <label [for]="answer.id"> Mark as best solution</label> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

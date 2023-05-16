@@ -1,0 +1,248 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "title": "Flutter, I Want Change Qty List From StreamController?",
+      "description": "discover plugins for your favorite writing, design and blogging tools",
+      "viewsCount": 0,
+      "answersCount": 0,
+      "upvotesCount": 0,
+      "downvotesCount": 0,
+      "askedOn": "2023-03-30T12:55:10.846Z",
+      "isResolved": true,
+      "askedBy": "101",
+      "categoryId": "301",
+      "askedUserName": "Nikhil",
+      "askedUserProfileImageUrl": "string"
+    },
+    {
+      "id": "2",
+      "title": "Why does gfortran produce such a large stack size compared to C++ in this simple program and what are the alternatives?",
+      "description": "discover plugins for your favorite writing, design and blogging tools",
+      "viewsCount": 0,
+      "answersCount": 0,
+      "upvotesCount": 0,
+      "downvotesCount": 0,
+      "askedOn": "2023-03-22T12:55:10.846Z",
+      "isResolved": true,
+      "askedBy": "102",
+      "categoryId": "301",
+      "askedUserName": "Nikhil",
+      "askedUserProfileImageUrl": "string"
+    },
+    {
+      "id": "3",
+      "title": "Flutter/Dart - Difference between () {} and () => {} ",
+      "description": "discover plugins for your favorite writing, design and blogging tools",
+      "viewsCount": 0,
+      "answersCount": 0,
+      "upvotesCount": 0,
+      "downvotesCount": 0,
+      "askedOn": "2023-03-29T12:55:10.846Z",
+      "isResolved": true,
+      "askedBy": "101",
+      "categoryId": "301",
+      "askedUserName": "Nikhil",
+      "askedUserProfileImageUrl": "string"
+    },
+    {
+      "id": "4",
+      "title": "Flutter, I Want Change Qty List From StreamController?",
+      "description": "discover plugins for your favorite writing, design and blogging tools",
+      "viewsCount": 0,
+      "answersCount": 0,
+      "upvotesCount": 0,
+      "downvotesCount": 0,
+      "askedOn": "2023-04-01T09:22:38.714Z",
+      "isResolved": true,
+      "askedBy": "101",
+      "categoryId": "301",
+      "askedUserName": "Nikhil",
+      "askedUserProfileImageUrl": "string"
+    },
+    {
+      "title": "Difference between UI and UX",
+      "description": "UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device.",
+      "categoryId": 3,
+      "id": "_aw0-dy"
+    }
+  ],
+  "answers": [
+    {
+      "id": "1",
+      "content": "Design and blogging tools placeholder text for use in your graphic, printand web layouts, and discover plugins for your favorite writing, design and blogging tools placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing",
+      "likesCount": 0,
+      "disLikesCount": 0,
+      "isBestSolution": true,
+      "answeredOn": "2023-03-30T12:58:36.032Z",
+      "answeredBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "answeredUserName": "string",
+      "answeredUserProfileImageUrl": "string"
+    },
+    {
+      "id": "2",
+      "content": "blogging tools placeholder text for use in your graphic, printand web layouts, and discover plugins for your favorite writing, design and blogging tools placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing",
+      "likesCount": 0,
+      "disLikesCount": 0,
+      "isBestSolution": true,
+      "answeredOn": "2023-03-30T12:58:36.032Z",
+      "answeredBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "answeredUserName": "string",
+      "answeredUserProfileImageUrl": "string"
+    },
+    {
+      "content": "dhruv\n",
+      "id": "xKgpmJD"
+    },
+    {
+      "content": "new answer",
+      "id": "2Tvfeub"
+    },
+    {
+      "content": "new answer",
+      "id": "E96J0ma"
+    },
+    {
+      "content": "gfgdfsdc",
+      "id": "eYiX6M4"
+    },
+    {
+      "content": "Dhruv",
+      "id": "WNPWann"
+    },
+    {
+      "content": "gdfs",
+      "id": "2Pxxp5A"
+    },
+    {
+      "content": "fbgdvsc",
+      "id": "1HPo2zC"
+    },
+    {
+      "content": "dfsz",
+      "id": "MBtq-4Y"
+    },
+    {
+      "content": "qqqq",
+      "id": "I5QLFQE"
+    },
+    {
+      "content": "45123",
+      "id": "z7MHEPH"
+    },
+    {
+      "content": "hfgderfsd",
+      "id": "P2t3rPX"
+    },
+    {
+      "content": "yjmthgdfs",
+      "id": "8S7Ugdp"
+    }
+  ],
+  "categories": [
+    {
+      "name": "NodeJs",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ab id tempore voluptatum officiis voluptate velit explicabo nemo omnis consectetur eum saepe unde molestias dolore mollitia, perspiciatis, obcaecati nulla! Labore",
+      "id": 1,
+      "questionsCountThisWeek": 1,
+      "questionsCountThisMonth": 69,
+      "questionsCount": 102293
+    },
+    {
+      "name": "DevOps",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ab id tempore voluptatum officiis voluptate velit explicabo nemo omnis consectetur eum saepe unde molestias dolore mollitia, perspiciatis, obcaecati nulla! Labore",
+      "id": 2,
+      "questionsCountThisWeek": 2,
+      "questionsCountThisMonth": 114,
+      "questionsCount": 102293
+    },
+    {
+      "name": "UX Design",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ab id tempore voluptatum officiis voluptate velit explicabo nemo omnis consectetur eum saepe unde molestias dolore mollitia, perspiciatis, obcaecati nulla! Labore",
+      "id": 3,
+      "questionsCountThisWeek": 0,
+      "questionsCountThisMonth": 10,
+      "questionsCount": 103294
+    },
+    {
+      "name": "Java",
+      "description": " ipsum dolor sit, amet consectetur adipisicing elit. Nisi ab id tempore voluptatum officiis voluptate velit explicabo nemo omnis consectetur eum saepe unde molestias dolore mollitia, perspiciatis, obcaecati nulla! Labore",
+      "id": 4,
+      "questionsCountThisWeek": 2,
+      "questionsCountThisMonth": 103,
+      "questionsCount": 102928
+    },
+    {
+      "name": "JavaScript",
+      "description": "abcdefghijklmnopqrstuvwxyz",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": "301",
+      "name": "Dhruv Sharma",
+      "designation": "Senior Manager -Dev",
+      "department": "Product Development",
+      "location": "Hyderabad",
+      "likesCount": 100,
+      "dislikesCount": 40,
+      "questionsAskedCount": 80,
+      "questionsAnsweredCount": 10,
+      "questionsSolvedCount": 20,
+      "profileImageUrl": "string"
+    },
+    {
+      "id": "302",
+      "name": "Karan Sharma",
+      "designation": "Senior Manager -Dev",
+      "department": "Product",
+      "location": "Hyderabad",
+      "likesCount": 10,
+      "dislikesCount": 140,
+      "questionsAskedCount": 60,
+      "questionsAnsweredCount": 40,
+      "questionsSolvedCount": 20,
+      "profileImageUrl": "string"
+    },
+    {
+      "id": "303",
+      "name": "Nikhil Vellacha",
+      "designation": "Senior Manager -Dev",
+      "department": "Product",
+      "location": "Hyderabad",
+      "likesCount": 70,
+      "dislikesCount": 10,
+      "questionsAskedCount": 80,
+      "questionsAnsweredCount": 10,
+      "questionsSolvedCount": 20,
+      "profileImageUrl": "string"
+    },
+    {
+      "id": "304",
+      "name": "Vamsi ",
+      "designation": "Senior Developer -Dev",
+      "department": "Product",
+      "location": "Hyderabad",
+      "likesCount": 90,
+      "dislikesCount": 40,
+      "questionsAskedCount": 80,
+      "questionsAnsweredCount": 10,
+      "questionsSolvedCount": 50,
+      "profileImageUrl": "string"
+    },
+    {
+      "id": "305",
+      "name": "Harman ",
+      "designation": "Senior Developer -Dev",
+      "department": "Product",
+      "location": "Hyderabad",
+      "likesCount": 80,
+      "dislikesCount": 40,
+      "questionsAskedCount": 10,
+      "questionsAnsweredCount": 10,
+      "questionsSolvedCount": 30,
+      "profileImageUrl": "string"
+    }
+  ]
+}

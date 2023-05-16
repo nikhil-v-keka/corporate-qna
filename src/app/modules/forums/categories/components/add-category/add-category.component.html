@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h5 class="modal-title h4">Add Category</h5>
+    <span class="icon ki-close" (click)="onClose()"></span>
+</div>
+<form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+    <div class="modal-body w-75">
+        <div class="form-group">
+            <label class="h5">Category Name</label>
+            <input type="text" class="form-control text-normal font-weight-normal" placeholder="Enter Your Text"
+                formControlName="name">
+        </div>
+        <div class="form-group">
+            <label class="h5">Description</label>
+            <textarea class="form-control resize-none text-normal" rows="3" placeholder="Enter Your Description"
+                formControlName="description"></textarea>
+        </div>
+    </div>
+    <div class="modal-footer p-20">
+        <button type="button" class="btn btn-secondary" (click)="onClose()">Cancel</button>
+        <button type="submit" class="btn text-white bg-accent-violet mt-1 px-24 " [disabled]="categoryForm.invalid">Save</button>
+    </div>
+</form>

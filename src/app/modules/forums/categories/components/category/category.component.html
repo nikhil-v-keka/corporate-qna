@@ -1,0 +1,20 @@
+<div class="d-flex flex-wrap clear-margin clear-padding">
+    <ng-container *ngFor="let category of categoryList">
+        <div class="card employee-profile-card col-3"
+            *ngIf="matchSearchValue(category)">
+            <div class="card-body text-primary">
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="h5 font-weight-bold">{{category.name}}</span>
+                    <span>({{category.questionsCount}})</span>
+                </div>
+                <div class="text-secondaryfont-weight-normal">
+                    <div class="my-20">{{category.description}}</div>
+                    <div class="mt-10">
+                        <span>Tagged {{category.taggedThisWeek}} this week, {{category.taggedThisMonth}}
+                            this month </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>
